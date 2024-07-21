@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/cabin.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Property Listing App</title>
+  </head>
+  <body class="bg-[--bg] font-['Outfit']">
+    <header class="h-[600px] relative">
+      <div
+        class="bg-[rgba(149,145,145,0.3)] absolute top-0 left-0 bottom-0 w-full h-full z-10"
+      ></div>
+      <img
+        src="./hero-image.jpg"
+        alt=""
+        class="bgImage w-full h-full object-cover md:object-right-bottom"
+      />
+      <div
+        class="absolute text-center md:text-left z-20 left-0 right-0 md:left-[14rem] top-[23%]"
+      >
+        <h1
+          class="text-5xl md:text-6xl text-center md:text-left text-[#121826] font-bold"
+        >
+          Peace, nature,
+          <span class="block mt-4">dream</span>
+        </h1>
+        <h2 class="mt-5 text-2xl">Find and book a great experience.</h2>
+      </div>
+    </header>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

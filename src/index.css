@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --bg:#121826;
+}
+.toggle::before{
+  width:50px;
+  height:25px;
+  background-color: black;
+  position: absolute;
+  content: '';
+  border-radius:30px;
+  left: 0;
+  transition: all 0.4s;
+}
+input[type='checkbox']:checked + label::before{
+
+  background-color: rgba(56, 56, 246, 0.81);
+}
+input[type='checkbox']:checked + label::after{
+ left:26px;
+ left: 5px;
+}
+input[type='checkbox']:focus + label::before{
+  box-shadow: 0 0 5px white;
+}
+.toggle::after{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(204, 202, 202);
+  position: absolute;
+  content: '';
+
+  left:26px;
+  transition: all 0.4s;
+}
+.categories{
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
